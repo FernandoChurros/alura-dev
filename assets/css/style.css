@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@import url(./header.css);
+@import url(./querys.css);
+
+:root {
+    --font-family: 'Inter', sans-serif;
+    --dark-blue: #051D3B;
+    --bg-box-search: rgba(255, 255, 255, 0.16);
+}
+
+.body {
+    background-color: var(--dark-blue);
+    font-family: var(--font-family);
+}

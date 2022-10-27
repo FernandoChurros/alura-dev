@@ -7,12 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Alura Dev</title>
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
-    <header>
+<body class="body">
+
+    <header class="header">
         <h1><img src="./assets/img/logo.svg" alt="Logo da Alura Dev, escrito 'Alura Dev'."></h1>
+
+        <input class="header__box_search" type="search" placeholder="Busque por algo" aria-label="Barra de pesquisa">
+
+        <button class="header__button search" type="button" aria-label="Pesquisa"></button>
+        <button class="header__button menu" type="button" aria-label="Menu"></button>
+
+        <div class="header__perfil">
+            <img class="header__photo_user" src="./assets/img/user.png" alt="Foto do usuário.">
+            <p class="haader__name_user">Fernando Churros</p>
+        </div>
     </header>
+
 </body>
 
 </html>
