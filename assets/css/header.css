@@ -19,6 +19,15 @@
     content: url(../img/menu-hamburger.svg);
 }
 
-.header__perfil {
+.header__perfil.desktop {
     display: none;
+}
+
+.header__photo_user {
+    border-radius: 50%;
+}
+
+.haader__name_user {
+    color: #fff;
+    line-height: 1.2;
 }

@@ -36,6 +36,10 @@
     .header__button.search {
         display: none;
     }
+
+    .header__perfil.mobile {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -47,19 +51,10 @@
         display: none;
     }
 
-    .header__perfil {
+    .header__perfil.desktop {
         display: flex;
         width: 120px;
         align-items: center;
         column-gap: .5rem;
-    }
-
-    .header__photo_user {
-        border-radius: 50%;
-    }
-
-    .haader__name_user {
-        color: #fff;
-        line-height: 1.2;
     }
 }

@@ -12,6 +12,7 @@
     --font-family: 'Inter', sans-serif;
     --dark-blue: #051D3B;
     --bg-box-search: rgba(255, 255, 255, 0.16);
+    --bg-menu: #2D415B;
 }
 
 .body {
@@ -20,10 +21,15 @@
 }
 
 .main {
-    display: grid;
-    grid-template-areas: 
-        'nav-area main-area'
-    ;
-    grid-template-columns: 200px 1fr;
     padding: 40px 2rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .main {
+        display: grid;
+        grid-template-areas: 
+            'nav-area main-area'
+        ;
+        grid-template-columns: 200px 1fr;
+    }
 }

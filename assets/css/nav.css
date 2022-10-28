@@ -1,5 +1,5 @@
 .nav {
-    display: none;
+    /* display: none; */
     grid-area: nav-area;
 }
 
