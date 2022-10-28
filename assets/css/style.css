@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 @import url(./header.css);
-@import url(./querys.css);
+@import url(./nav.css);
+@import url(./content.css);
+
+    /* Medias Querys importadas */
+@import url(./querys/header-q.css);
+@import url(./querys/nav-q.css);
 
 :root {
     --font-family: 'Inter', sans-serif;
@@ -12,4 +17,13 @@
 .body {
     background-color: var(--dark-blue);
     font-family: var(--font-family);
+}
+
+.main {
+    display: grid;
+    grid-template-areas: 
+        'nav-area main-area'
+    ;
+    grid-template-columns: 200px 1fr;
+    padding: 40px 2rem;
 }

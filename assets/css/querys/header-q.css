@@ -60,5 +60,6 @@
 
     .haader__name_user {
         color: #fff;
+        line-height: 1.2;
     }
 }
