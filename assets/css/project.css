@@ -13,6 +13,10 @@
     letter-spacing: 4px;
 }
 
+.project-form__title:nth-of-type(2) {
+    margin-top: 40px;
+}
+
 .input__project {
     background-color: rgba(255, 255, 255, .16);
     border-radius: 8px;
@@ -21,6 +25,56 @@
     color: #fff;
 }
 
+.input__project:hover {
+    background-color: rgba(255, 255, 255, .24);
+}
+
 .input__project.description {
     height: 80px;
+}
+
+.container__customize {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.input__project.select {
+    border: none;
+}
+
+.input__project.select option {
+    color: #141414;
+    background-color: rgba(255, 255, 255, .16);
+}
+
+#color {
+    width: 100%;
+    border: 1px solid #fff;
+    background-color: transparent;
+    padding: 5px;
+    height: 55px;
+}
+
+.input__project.save {
+    background-color: #5081FB;
+    color: #051D3B;
+    margin-top: 1rem;
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+    .container__customize {
+        column-gap: 1rem;
+        flex-direction: row;
+    }   
+
+    .input__project.select {
+        width: 50%;
+    }
+
+    #color {
+        width: 50%;
+    }
 }

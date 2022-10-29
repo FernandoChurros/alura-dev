@@ -56,13 +56,25 @@
         <section class="project">
             
             <form class="project-form" action="">
-                <h1 class="project-form__title">SEU PROJETO</h1>
+                <h2 class="project-form__title">SEU PROJETO</h2>
 
-                <label for="name__project" hidden>Nome do seu projeto</label>
-                <input id="name__project" class="input__project" type="text" placeholder="Nome do seu projeto">
+                <input class="input__project" type="text" placeholder="Nome do seu projeto" aria-label="Nome do seu projeto">
 
-                <label for="description__project" hidden>Descrição do seu projeto</label>
-                <input id="description__project" class="input__project description" type="text" placeholder="Descrição do seu projeto">
+                <input class="input__project description" type="text" placeholder="Descrição do seu projeto" aria-labe="descrição do seu projeto">
+
+                <h2 class="project-form__title">PERSONALIZAÇÃO</h2>
+
+                <div class="container__customize">
+                    <select class="input__project select" name="language" aria-label="Linguagem de programação">
+                        <option value="javascript">JavaScritp</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                    </select>
+    
+                    <input id="color" class="input__project" type="color" name="bg-color" value="#6BD1FF" aria-label="Plano de fundo do editor">
+                </div>
+
+                <button class="input__project save">Salvar Projeto</button>
             </form>
         </section>
 
@@ -71,7 +83,7 @@
 
             <ul class="nav__list">
                 <li class="nav__list_item">
-                    <a href="#"> <i class="list__icon code"></i> Editor de código</a>
+                    <a href="#"> <i class="list__icon icon__code"></i> Editor de código</a>
                 </li>
 
                 <li class="nav__list_item">
