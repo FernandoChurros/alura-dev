@@ -3,6 +3,7 @@
 @import url(./header.css);
 @import url(./nav.css);
 @import url(./content.css);
+@import url(./code.css);
 @import url(./project.css);
 
     /* Medias Querys importadas */
@@ -19,6 +20,7 @@
 .body {
     background-color: var(--dark-blue);
     font-family: var(--font-family);
+    color: #fff;
 }
 
 textarea {
@@ -30,6 +32,10 @@ textarea {
 
 button:hover {
     cursor: pointer;
+}
+
+#myForm {
+    height: 100%;
 }
 
 @media screen and (min-width: 768px) {

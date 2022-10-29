@@ -31,32 +31,39 @@
     </header>
 
     <main class="main">
-        <section class="project">
+        <section class="code">
             <div class="bg__write">
+
                 <div class="container__write">
+
                     <div class="window__manager">
                         <div class="circle red"></div>
                         <div class="circle yellow"></div>
                         <div class="circle green"></div>
                     </div>
-                    <textarea class="project__write" cols="30" rows="10" placeholder="const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
 
- const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-                                            
- const unfold = (f, seed) => {
-                    
-    const go = (f, seed, acc) => {   
+                    <form id="myForm" action="">
+                        <textarea class="project__write" name="code"></textarea>
+                    </form>
 
-        const res = f(seed)
-        return res ? go(f, res[1], acc.concat([res[0]])) : acc
-    }
-
-    return go(f, seed, [])
-}"></textarea>
                 </div>
+
             </div>
 
-            <button class="btn highlight" type="button">Visualizar com o highlight</button>
+            <button class="btn highlight" type="button" form="myForm">Visualizar com o highlight</button>
+        </section>
+
+        <section class="project">
+            
+            <form class="project-form" action="">
+                <h1 class="project-form__title">SEU PROJETO</h1>
+
+                <label for="name__project" hidden>Nome do seu projeto</label>
+                <input id="name__project" class="input__project" type="text" placeholder="Nome do seu projeto">
+
+                <label for="description__project" hidden>Descrição do seu projeto</label>
+                <input id="description__project" class="input__project description" type="text" placeholder="Descrição do seu projeto">
+            </form>
         </section>
 
         <nav class="nav hidden__nav">
