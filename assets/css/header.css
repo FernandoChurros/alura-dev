@@ -11,8 +11,13 @@
     border-radius: .5rem;
 }
 
-.header__button:nth-of-type(2):hover {
-    cursor: pointer;
+.header__button.menu, .header__button.menu-close {
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.header__button.menu:hover, .header__button.menu-close:hover {
+    background-color: rgba(80, 129, 251, 0.08);
 }
 
 .header__button.search::before {

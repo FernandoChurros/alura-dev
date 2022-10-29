@@ -37,3 +37,8 @@
 .list__icon.comunity {
     content: url('../img/icon-comunity.svg')
 }
+
+.header__perfil.mobile:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: .5rem;
+}
