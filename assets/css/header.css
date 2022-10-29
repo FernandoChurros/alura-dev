@@ -11,12 +11,20 @@
     border-radius: .5rem;
 }
 
+.header__button:nth-of-type(2):hover {
+    cursor: pointer;
+}
+
 .header__button.search::before {
     content: url(../img/search.svg);
 }
 
 .header__button.menu::before {
     content: url(../img/menu-hamburger.svg);
+}
+
+.header__button.menu-close::before {
+    content: url(../img/menu-hamburger-close.svg);
 }
 
 .header__perfil.desktop {

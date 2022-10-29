@@ -1,6 +1,11 @@
 .nav {
     /* display: none; */
     grid-area: nav-area;
+    display: block;
+}
+
+.hidden__nav {
+    display: none;
 }
 
 .nav__title {
