@@ -1,5 +1,6 @@
 .project {
     padding: 0 2rem 40px;
+    grid-area: customize-area;
 }
 
 .project-form {

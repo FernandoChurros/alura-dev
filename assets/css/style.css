@@ -48,8 +48,12 @@ button:hover {
     .main {
         display: grid;
         grid-template-areas: 
-            'nav-area main-area'
+            'nav-area code-area customize-area'
         ;
         grid-template-columns: 200px 1fr;
+    }
+
+    .code, .project {
+        padding: 0 2rem;
     }
 }
