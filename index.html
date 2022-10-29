@@ -31,7 +31,33 @@
     </header>
 
     <main class="main">
-        <section class="content"></section>
+        <section class="project">
+            <div class="bg__write">
+                <div class="container__write">
+                    <div class="window__manager">
+                        <div class="circle red"></div>
+                        <div class="circle yellow"></div>
+                        <div class="circle green"></div>
+                    </div>
+                    <textarea class="project__write" cols="30" rows="10" placeholder="const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+ const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+                                            
+ const unfold = (f, seed) => {
+                    
+    const go = (f, seed, acc) => {   
+
+        const res = f(seed)
+        return res ? go(f, res[1], acc.concat([res[0]])) : acc
+    }
+
+    return go(f, seed, [])
+}"></textarea>
+                </div>
+            </div>
+
+            <button class="btn highlight" type="button">Visualizar com o highlight</button>
+        </section>
 
         <nav class="nav hidden__nav">
             <p class="nav__title">Menu</p>

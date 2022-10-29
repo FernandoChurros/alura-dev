@@ -3,6 +3,7 @@
 @import url(./header.css);
 @import url(./nav.css);
 @import url(./content.css);
+@import url(./project.css);
 
     /* Medias Querys importadas */
 @import url(./querys/header-q.css);
@@ -20,8 +21,21 @@
     font-family: var(--font-family);
 }
 
-.main {
-    padding: 40px 2rem;
+textarea {
+    border: 0 none;
+    box-shadow: 0 0 0 0;
+    outline: none;
+    resize: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        padding: 40px 2rem;
+    }
 }
 
 @media screen and (min-width: 1440px) {
